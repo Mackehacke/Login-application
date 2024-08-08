@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testverktyg</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Nedan är en container som kaplsar om innehållet på sidan. -->
+    <div class="container">
+      <header>
+        <h1 class="centralizedText">Testverktyg</h1>
+      </header>
+
+      <p class="centralizedText pPadding">
+        På denna sida kan du testa dina kunskaper i HTML, CSS och JavaScript.
+      </p>
+
+      <h2>Quiz</h2>
+      <!-- Tabell med quizet där informationen hämtas från API:et genom JavaScript. -->
+      <table id="quiz_table">
+        <thead>
+          <tr>
+            <th>Kurs</th>
+            <th>Typ</th>
+            <th>Svårighetsgrad</th>
+            <th>Fråga</th>
+            <th>Rätt svar</th>
+            <th>Felaktiga svar</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <p class="pPadding">
+        Vill du gå tillbaka till föregående sida kan du följa
+        <a href="./kursinfo.html">denna länk</a>.
+      </p>
+    </div>
+
+    <!-- JavaScript-filen är unik för varje sida. -->
+    <script src="../javascript/scripts_testverktyg.js"></script>
+  </body>
+</html>

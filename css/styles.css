@@ -1,0 +1,144 @@
+/* === Allmänna koder === */
+
+/* Koderna nedan styr bredden på webbsidorna, teckenfamiljen samt teckenstorleken på alla textelement förutom h-element. */
+body {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  background-color: #3f72af;
+}
+
+/* Koderna nedan styr utseendet på h-element (h1-h3). */
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #112d4e;
+}
+
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4em;
+}
+
+/* Alla HTML-element med denna class får centraliserad text. */
+.centralizedText {
+  text-align: center;
+}
+
+/* Gör så att när alla länkar hovras över får de en cursor:pointer samt mörkblå färg. */
+a:hover {
+  cursor: pointer;
+  color: #112d4e;
+}
+
+a:active {
+  color: #ee0000;
+}
+
+/* Ger tabellen en ram och ger varje del av tabellen mer utrymme. */
+table,
+th,
+td {
+  border: 0.1rem solid #112d4e;
+  padding: 1rem;
+}
+
+/* Koderna nedan styr containern som kapslar in innehåll på kursinfo.html och testverktyg.html (index.html har sin egen container med grid). */
+.container {
+  background-color: #ffffff;
+  width: 90%; /* Containtern täcker 90% av sidan (i bredd). */
+  margin: auto; /* Med margin:auto hamnar containern i mitten och blir centrliserad. */
+  border-radius: 2em; /* Rundade hörn. */
+  padding: 1em;
+  border: 0.313rem solid #112d4e; /* Containtern får en solid blå ram. */
+}
+
+/* Ger p-element lite padding för att öka avståndet till andra element. */
+.pPadding {
+  padding: 1rem;
+}
+
+/* === INDEX.HTML === */
+
+/* h1-elementet på index.html får en ram uppe och nere samt en vit färg istället för den blåa på andra sidorna. */
+#h1Index {
+  color: #ffffff;
+  border-top: 0.25em solid #112d4e;
+  border-bottom: 0.25em solid #112d4e;
+  padding: 0.5em;
+}
+
+/* Koderna nedan kapslar in allt inuti div-elementet med class="grid_container" och ger det en grid layout samt annan färg och en ram. */
+.grid_container {
+  background-color: #ffffff;
+  width: 90%; /* Containern täcker 90% av sidans bredd. */
+  margin: auto; /* Containern blir centraliserad. */
+  display: grid;
+  padding: 1.25rem;
+  grid-template-columns: 1fr 1fr; /* Speciefierar att det är två kolumner. */
+  grid-gap: 1.875rem;
+  border-radius: 2em;
+  border: 0.313rem solid #112d4e;
+}
+
+/* Bredden på de två grid-blocken ska vara 100%. */
+.grid_child_1,
+.grid_child_2 {
+  width: 100%;
+}
+
+/* Label och inputfälten hamnar på olika rader. */
+label {
+  display: block;
+}
+
+/* Styling för inputfältet, gör de större och ger en annan design. */
+input[type='text'],
+input[type='password'] {
+  width: 80%;
+  padding: 0.75rem 0.75rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: 0.063rem solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Koderna nedan ändrar designen på inloggningsknappen. */
+#signInButton {
+  background-color: #112d4e;
+  color: #ffffff;
+  padding: 0.875rem 1.25rem;
+  margin: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+/* När inloggnignsknappen hovras över får den en ljusare bakgrundsfärg. */
+#signInButton:hover {
+  background-color: #3f72af;
+}
+
+/* === KURSINFO.HTML === */
+
+/* Kurstabellen blir centraliserad. */
+#course_table {
+  margin: auto;
+}
+
+/* Ökar avståndet mellan quizet och h1-elementet. */
+#Kursinfo {
+  margin-bottom: 2rem;
+}
+
+/* === TESTVERKTYG.HTML === */
+
+/* Quiz-tabellen blir centraliserad. */
+#quiz_table {
+  margin: auto;
+}

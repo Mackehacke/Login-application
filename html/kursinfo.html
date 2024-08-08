@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kursinformation</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Nedan är en container som kapslar in innehållet på sidan. -->
+    <div class="container">
+      <header>
+        <h1 class="centralizedText">Kursinformation</h1>
+      </header>
+
+      <!-- P-element med text som beskriver kurserna och skolans profil. -->
+      <p class="centralizedText pPadding">
+        På denna sida kan du se vilka kurser du kan söka för närvarande. <br />
+        Vi erbjuder kurser inom flera olika områden som du kan läsa på olika
+        skolor.
+      </p>
+
+      <!-- Tabellen hämtar kursinformation från API:et genom JavaScript. -->
+      <table id="course_table">
+        <thead>
+          <tr>
+            <th>Kurs ID</th>
+            <th>Kursnamn</th>
+            <th>Högskolepoäng</th>
+            <th>Skola</th>
+            <th>Startvecka</th>
+            <th>Slutvecka</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <p class="pPadding centralizedText">
+        Vill du testa dina kunskaper i HTML, CSS och JavaScript? Då kan du följa
+        <a href="./testverktyg.html">den här länken</a> för ett quiz.
+      </p>
+    </div>
+
+    <!-- JavaScript-filen som är unik för varje sida. -->
+    <script src="../javascript/scripts_kursinfo.js"></script>
+  </body>
+</html>

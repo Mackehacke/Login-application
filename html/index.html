@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inloggning</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <!-- CSS-filen som är kopplad till varje HTML-fil. -->
+  </head>
+  <body>
+    <!-- Header med h1 innehållandes fiktiva skolans namn. -->
+    <header>
+      <h1 id="h1Index" class="centralizedText">Marcus IT Högskola</h1>
+    </header>
+
+    <!-- Container för sidans innehåll med grid-layout. -->
+    <div class="grid_container">
+      <!-- Första kolumnen av grid med h2-element, input-fälten och knapp för inloggning. -->
+      <div class="grid_child_1 centralizedText">
+        <h2>Inloggning - Student</h2>
+        <!-- Det som skrivs in i input-fälten matchas med informationen i API:et genom JavaScript. -->
+        <label for="username">Studentidentitet / Användarnamn</label>
+        <input type="text" id="username" placeholder="Användarnamn" />
+        <label for="password">Lösenord</label>
+        <input type="password" id="password" placeholder="Lösenord" />
+        <button type="button" id="signInButton" onclick="login()">
+          Logga in
+        </button>
+      </div>
+
+      <!-- Andra kolumnen av grid med supportalternativ. -->
+      <div class="grid_child_2">
+        <h3>Problem att logga in?</h3>
+        <p><a href="#signInWindow">Kontakta supporten</a></p>
+
+        <h3>Driftinformation</h3>
+        <p><a href="#signInWindow">Personal</a></p>
+        <p><a href="#signInWindow">Student</a></p>
+      </div>
+    </div>
+
+    <!-- Länken till JavaScript. Varje HTML-fil har sin egna JavaScript-fil. -->
+    <script src="../javascript/scripts_index.js"></script>
+  </body>
+</html>
